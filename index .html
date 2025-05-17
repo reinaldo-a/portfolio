@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Desenvolvedor</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-code"></i>
+        <span>DevPortfolio</span>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="header-buttons">
+        <button id="theme-toggle" class="theme-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="btn btn-primary">
+          Download CV <i class="fas fa-arrow-right"></i>
+        </button>
+        <button class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">Sobre</a></li>
+      <li><a href="#skills">Habilidades</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="badge">Disponível para projetos</div>
+        <h1 class="gradient-text">Desenvolvedor Full Stack</h1>
+        <p>Transformando ideias em experiências digitais excepcionais com código limpo e design intuitivo.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-gradient">Ver Projetos</a>
+          <a href="#contact" class="btn btn-outline">Entrar em Contato</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section-bg">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="profile-image">
+            <img src="https://via.placeholder.com/400" alt="Profile">
+          </div>
+          <div class="profile-icon">
+            <i class="fas fa-code"></i>
+          </div>
+        </div>
+        <div class="about-content">
+          <h2>Sobre Mim</h2>
+          <p>Olá! Sou um desenvolvedor full stack apaixonado por criar soluções web inovadoras e intuitivas. Com mais de 5 anos de experiência no desenvolvimento de aplicações web, tenho trabalhado com as tecnologias mais recentes para entregar produtos de alta qualidade.</p>
+          <p>Minha abordagem combina habilidades técnicas sólidas com um forte senso de design e usabilidade. Acredito que o melhor software não é apenas funcional, mas também proporciona uma experiência excepcional ao usuário.</p>
+          
+          <div class="tabs">
+            <div class="tab-header">
+              <button class="tab-btn active" data-tab="experience">Experiência</button>
+              <button class="tab-btn" data-tab="education">Educação</button>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active" id="experience">
+                <div class="timeline-item">
+                  <h3>Senior Frontend Developer</h3>
+                  <p class="timeline-meta">Tech Innovations Inc. | 2021 - Presente</p>
+                  <p>Leading the frontend development team, implementing new features, and optimizing performance for a SaaS platform with over 100,000 users.</p>
+                </div>
+                <div class="timeline-item">
+                  <h3>Full Stack Developer</h3>
+                  <p class="timeline-meta">Digital Solutions Ltd. | 2018 - 2021</p>
+                  <p>Developed and maintained multiple web applications, implemented CI/CD pipelines, and collaborated with cross-functional teams.</p>
+                </div>
+                <div class="timeline-item">
+                  <h3>Junior Developer</h3>
+                  <p class="timeline-meta">StartUp Ventures | 2016 - 2018</p>
+                  <p>Worked on frontend development using React, implemented responsive designs, and participated in code reviews.</p>
+                </div>
+              </div>
+              <div class="tab-pane" id="education">
+                <div class="timeline-item">
+                  <h3>Mestrado em Ciência da Computação</h3>
+                  <p class="timeline-meta">Universidade Tech | 2018-2020</p>
+                  <p>Especialização em Inteligência Artificial e Desenvolvimento Web Avançado</p>
+                </div>
+                <div class="timeline-item">
+                  <h3>Bacharelado em Engenharia de Software</h3>
+                  <p class="timeline-meta">Universidade Digital | 2014-2018</p>
+                  <p>Formado com honras, participação em projetos de pesquisa em UX/UI</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2 class="section-title">Minhas Habilidades</h2>
+      
+      <div class="skills-grid">
+        <div class="skills-column">
+          <h3>Habilidades Técnicas</h3>
+          <div class="tech-skills">
+            <div class="tech-skill-category">
+              <h4>Frontend</h4>
+              <div class="tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">React</span>
+                <span class="tag">Next.js</span>
+                <span class="tag">Tailwind CSS</span>
+                <span class="tag">Styled Components</span>
+              </div>
+            </div>
+            
+            <div class="tech-skill-category">
+              <h4>Backend</h4>
+              <div class="tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">Express</span>
+                <span class="tag">NestJS</span>
+                <span class="tag">GraphQL</span>
+                <span class="tag">REST API</span>
+                <span class="tag">Python</span>
+                <span class="tag">Django</span>
+              </div>
+            </div>
+            
+            <div class="tech-skill-category">
+              <h4>Banco de Dados</h4>
+              <div class="tags">
+                <span class="tag">MongoDB</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Redis</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="skills-column">
+          <h3>Tecnologias & Ferramentas</h3>
+          <div class="tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Docker</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Vercel</span>
+            <span class="tag">Netlify</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Jest</span>
+            <span class="tag">Testing Library</span>
+            <span class="tag">Cypress</span>
+            <span class="tag">Webpack</span>
+            <span class="tag">Vite</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Adobe XD</span>
+          </div>
+          
+          <h3>Soft Skills</h3>
+          <div class="soft-skills">
+            <div class="soft-skill">
+              <div class="soft-skill-dot"></div>
+              <span>Comunicação</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-dot"></div>
+              <span>Trabalho em Equipe</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-dot"></div>
+              <span>Resolução de Problemas</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-dot"></div>
+              <span>Gerenciamento de Tempo</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-dot"></div>
+              <span>Adaptabilidade</span>
+            </div>
+            <div class="soft-skill">
+              <div class="soft-skill-dot"></div>
+              <span>Pensamento Crítico</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects section-bg">
+    <div class="container">
+      <h2 class="section-title">Meus Projetos</h2>
+      <p class="section-subtitle">Uma seleção dos meus trabalhos recentes, demonstrando minhas habilidades em desenvolvimento web e design de interfaces.</p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/500x300" alt="E-commerce Platform">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>E-commerce Platform</h3>
+            <p>A full-stack e-commerce platform with payment integration, user authentication, and admin dashboard.</p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Node.js</span>
+              <span class="project-tag">MongoDB</span>
+              <span class="project-tag">Stripe</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/500x300" alt="AI Content Generator">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>AI Content Generator</h3>
+            <p>An AI-powered application that generates content based on user prompts using OpenAI's GPT models.</p>
+            <div class="project-tags">
+              <span class="project-tag">Next.js</span>
+              <span class="project-tag">TypeScript</span>
+              <span class="project-tag">OpenAI API</span>
+              <span class="project-tag">Tailwind CSS</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/500x300" alt="Real-time Chat Application">
+            <div class="project-links">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3>Real-time Chat Application</h3>
+            <p>A real-time chat application with features like message encryption, file sharing, and video calls.</p>
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Socket.io</span>
+              <span class="project-tag">Express</span>
+              <span class="project-tag">WebRTC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12">
+        <a href="#" class="btn btn-primary">
+          Ver Todos os Projetos <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Vamos Conversar</h2>
+      <p class="section-subtitle">Interessado em trabalhar juntos? Entre em contato para discutirmos seu projeto.</p>
+      
+      <div class="contact-card">
+        <form class="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input type="text" id="name" placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="seu.email@exemplo.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="subject">Assunto</label>
+            <input type="text" id="subject" placeholder="Como posso ajudar?">
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" placeholder="Descreva seu projeto ou pergunta..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar Mensagem</button>
+        </form>
+      </div>
+      
+      <div class="contact-info">
+        <a href="mailto:contato@exemplo.com" class="contact-email">
+          <i class="fas fa-envelope"></i>
+          <span>contato@exemplo.com</span>
+        </a>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="#" class="social-link" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <i class="fas fa-code"></i>
+          <span>DevPortfolio</span>
+        </div>
+        <p class="copyright">&copy; <span id="current-year"></span> Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="#home" class="footer-link">Voltar ao topo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
