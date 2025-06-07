@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio de Desenvolvedor</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Portfolio DevRJ</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/script.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
@@ -14,7 +15,7 @@
     <div class="container">
       <div class="logo">
         <i class="fas fa-code"></i>
-        <span>DevPortfolio</span>
+        <span>DevRJ</span>
       </div>
       <nav class="nav">
         <ul>
@@ -77,7 +78,7 @@
       <div class="about-grid">
         <div class="about-image">
           <div class="profile-image">
-            <img src="https://via.placeholder.com/400" alt="Profile">
+            <img src="assets/img/rj.jpeg" alt="Foto de Perfil">
           </div>
           <div class="profile-icon">
             <i class="fas fa-code"></i>
@@ -85,46 +86,51 @@
         </div>
         <div class="about-content">
           <h2>Sobre Mim</h2>
-          <p>Olá! Sou um desenvolvedor full stack apaixonado por criar soluções web inovadoras e intuitivas. Com mais de 5 anos de experiência no desenvolvimento de aplicações web, tenho trabalhado com as tecnologias mais recentes para entregar produtos de alta qualidade.</p>
-          <p>Minha abordagem combina habilidades técnicas sólidas com um forte senso de design e usabilidade. Acredito que o melhor software não é apenas funcional, mas também proporciona uma experiência excepcional ao usuário.</p>
+          <p>Olá! Sou um desenvolvedor full stack focado em criar soluções web modernas, funcionais e fáceis de usar. Gosto de unir tecnologia e design para construir aplicações que realmente façam sentido para quem usa.</p>
+          <p>Tenho trabalhado com tecnologias atuais do desenvolvimento web, sempre buscando escrever código limpo e pensar na melhor experiência para o usuário. Acredito que um bom sistema vai além de funcionar: ele precisa ser intuitivo, bonito e eficiente.</p>
           
           <div class="tabs">
-            <div class="tab-header">
-              <button class="tab-btn active" data-tab="experience">Experiência</button>
-              <button class="tab-btn" data-tab="education">Educação</button>
-            </div>
-            <div class="tab-content">
-              <div class="tab-pane active" id="experience">
-                <div class="timeline-item">
-                  <h3>Senior Frontend Developer</h3>
-                  <p class="timeline-meta">Tech Innovations Inc. | 2021 - Presente</p>
-                  <p>Leading the frontend development team, implementing new features, and optimizing performance for a SaaS platform with over 100,000 users.</p>
-                </div>
-                <div class="timeline-item">
-                  <h3>Full Stack Developer</h3>
-                  <p class="timeline-meta">Digital Solutions Ltd. | 2018 - 2021</p>
-                  <p>Developed and maintained multiple web applications, implemented CI/CD pipelines, and collaborated with cross-functional teams.</p>
-                </div>
-                <div class="timeline-item">
-                  <h3>Junior Developer</h3>
-                  <p class="timeline-meta">StartUp Ventures | 2016 - 2018</p>
-                  <p>Worked on frontend development using React, implemented responsive designs, and participated in code reviews.</p>
-                </div>
+          <div class="tab-header">
+            <button class="tab-btn active" data-tab="experience">Experiência</button>
+            <button class="tab-btn" data-tab="education">Educação</button>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active" id="experience">
+              <div class="timeline-item">
+                <h3>Desenvolvedor Web (Estágio)</h3>
+                <p class="timeline-meta">FITec - Fundação para Inovações Tecnológicas | 2024 - Presente</p>
+                <p>Atuação no desenvolvimento e manutenção de sistemas internos utilizando Django, HTML, CSS e JavaScript. Participação na integração de mapas interativos e na criação de formulários personalizados.</p>
               </div>
-              <div class="tab-pane" id="education">
-                <div class="timeline-item">
-                  <h3>Mestrado em Ciência da Computação</h3>
-                  <p class="timeline-meta">Universidade Tech | 2018-2020</p>
-                  <p>Especialização em Inteligência Artificial e Desenvolvimento Web Avançado</p>
-                </div>
-                <div class="timeline-item">
-                  <h3>Bacharelado em Engenharia de Software</h3>
-                  <p class="timeline-meta">Universidade Digital | 2014-2018</p>
-                  <p>Formado com honras, participação em projetos de pesquisa em UX/UI</p>
-                </div>
+              <div class="timeline-item">
+                <h3>Desenvolvedor Full Stack</h3>
+                <p class="timeline-meta">Projetos Pessoais e Acadêmicos | 2023 - Presente</p>
+                <p>Criação de aplicações web com foco em boas práticas de código, responsividade e experiência do usuário. Utilização de Python, Django, MySQL, e integração com APIs externas.</p>
+              </div>
+              <div class="timeline-item">
+                <h3>Auxiliar em Retificação de Imagens</h3>
+                <p class="timeline-meta">Projeto vinculado à FITec | 2023 - 2024</p>
+                <p>Correção de pontos georreferenciados em imagens satelitais. Suporte técnico no tratamento de dados espaciais para sistemas internos.</p>
+              </div>
+            </div>
+            <div class="tab-pane" id="education">
+              <div class="timeline-item">
+                <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
+                <p class="timeline-meta">Instituição de Ensino Superior | Em andamento</p>
+                <p>Formação com foco em desenvolvimento de software, banco de dados, estruturas de dados e engenharia de software.</p>
+              </div>
+              <div class="timeline-item">
+                <h3>Cursos Complementares</h3>
+                <p class="timeline-meta">Online - Alura, Udemy, Documentação Oficial</p>
+                <p>Estudos contínuos sobre frameworks web, versionamento com Git, boas práticas de frontend e backend.</p>
               </div>
             </div>
           </div>
+        </div>
+          
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">3+</span>
+              <span class="stat-label
         </div>
       </div>
     </div>
@@ -133,101 +139,74 @@
   <!-- Skills Section -->
   <section id="skills" class="skills">
     <div class="container">
-      <h2 class="section-title">Minhas Habilidades</h2>
-      
-      <div class="skills-grid">
-        <div class="skills-column">
-          <h3>Habilidades Técnicas</h3>
-          <div class="tech-skills">
-            <div class="tech-skill-category">
-              <h4>Frontend</h4>
-              <div class="tags">
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
-                <span class="tag">JavaScript</span>
-                <span class="tag">TypeScript</span>
-                <span class="tag">React</span>
-                <span class="tag">Next.js</span>
-                <span class="tag">Tailwind CSS</span>
-                <span class="tag">Styled Components</span>
-              </div>
-            </div>
-            
-            <div class="tech-skill-category">
-              <h4>Backend</h4>
-              <div class="tags">
-                <span class="tag">Node.js</span>
-                <span class="tag">Express</span>
-                <span class="tag">NestJS</span>
-                <span class="tag">GraphQL</span>
-                <span class="tag">REST API</span>
-                <span class="tag">Python</span>
-                <span class="tag">Django</span>
-              </div>
-            </div>
-            
-            <div class="tech-skill-category">
-              <h4>Banco de Dados</h4>
-              <div class="tags">
-                <span class="tag">MongoDB</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">MySQL</span>
-                <span class="tag">Redis</span>
-                <span class="tag">Firebase</span>
-              </div>
-            </div>
+  <h2 class="section-title">Minhas Habilidades</h2>
+  
+  <div class="skills-grid">
+    <div class="skills-column">
+      <h3>Habilidades Técnicas</h3>
+      <div class="tech-skills">
+        <div class="tech-skill-category">
+          <h4>Frontend</h4>
+          <div class="tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Flutter</span>
           </div>
         </div>
         
-        <div class="skills-column">
-          <h3>Tecnologias & Ferramentas</h3>
+        <div class="tech-skill-category">
+          <h4>Backend</h4>
           <div class="tags">
-            <span class="tag">Git</span>
-            <span class="tag">GitHub</span>
-            <span class="tag">Docker</span>
-            <span class="tag">AWS</span>
-            <span class="tag">Vercel</span>
-            <span class="tag">Netlify</span>
-            <span class="tag">CI/CD</span>
-            <span class="tag">Jest</span>
-            <span class="tag">Testing Library</span>
-            <span class="tag">Cypress</span>
-            <span class="tag">Webpack</span>
-            <span class="tag">Vite</span>
-            <span class="tag">Figma</span>
-            <span class="tag">Adobe XD</span>
+            <span class="tag">Python</span>
+            <span class="tag">Django</span>
+            <span class="tag">php</span>
+            <span class="tag">MySQL</span>
           </div>
-          
-          <h3>Soft Skills</h3>
-          <div class="soft-skills">
-            <div class="soft-skill">
-              <div class="soft-skill-dot"></div>
-              <span>Comunicação</span>
-            </div>
-            <div class="soft-skill">
-              <div class="soft-skill-dot"></div>
-              <span>Trabalho em Equipe</span>
-            </div>
-            <div class="soft-skill">
-              <div class="soft-skill-dot"></div>
-              <span>Resolução de Problemas</span>
-            </div>
-            <div class="soft-skill">
-              <div class="soft-skill-dot"></div>
-              <span>Gerenciamento de Tempo</span>
-            </div>
-            <div class="soft-skill">
-              <div class="soft-skill-dot"></div>
-              <span>Adaptabilidade</span>
-            </div>
-            <div class="soft-skill">
-              <div class="soft-skill-dot"></div>
-              <span>Pensamento Crítico</span>
-            </div>
+        </div>
+        
+        <div class="tech-skill-category">
+          <h4>Banco de Dados</h4>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">PostgreSQL</span>
           </div>
         </div>
       </div>
     </div>
+    
+    <div class="skills-column">
+      <h3>Ferramentas</h3>
+      <div class="tags">
+        <span class="tag">Git</span>
+        <span class="tag">GitHub</span>
+        <span class="tag">VS Code</span>
+        <span class="tag">Docker (básico)</span>
+      </div>
+      
+      <h3>Soft Skills</h3>
+      <div class="soft-skills">
+        <div class="soft-skill">
+          <div class="soft-skill-dot"></div>
+          <span>Comunicação</span>
+        </div>
+        <div class="soft-skill">
+          <div class="soft-skill-dot"></div>
+          <span>Trabalho em Equipe</span>
+        </div>
+        <div class="soft-skill">
+          <div class="soft-skill-dot"></div>
+          <span>Adaptabilidade</span>
+        </div>
+        <div class="soft-skill">
+          <div class="soft-skill-dot"></div>
+          <span>Resolução de Problemas</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   </section>
 
   <!-- Projects Section -->
@@ -239,15 +218,15 @@
       <div class="projects-grid">
         <div class="project-card">
           <div class="project-image">
-            <img src="https://via.placeholder.com/500x300" alt="E-commerce Platform">
+            <img src="assets/img/samu.webp" alt="SAMU">
             <div class="project-links">
               <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
               <a href="#" class="project-link"><i class="fab fa-github"></i></a>
             </div>
           </div>
           <div class="project-content">
-            <h3>E-commerce Platform</h3>
-            <p>A full-stack e-commerce platform with payment integration, user authentication, and admin dashboard.</p>
+            <h3>Sistema Gerenciamento SAMU</h3>
+            <p>Plataforma full-stack privada para gestão de serviços médicos de emergência, com autenticação de usuários, controle de acesso, painel administrativo e integração com sistemas internos para gerenciamento de dados geográficos e atendimentos.</p>
             <div class="project-tags">
               <span class="project-tag">React</span>
               <span class="project-tag">Node.js</span>
@@ -259,14 +238,14 @@
         
         <div class="project-card">
           <div class="project-image">
-            <img src="https://via.placeholder.com/500x300" alt="AI Content Generator">
+            <img src="assets/img/eletrica.png" alt="AI Content Generator">
             <div class="project-links">
-              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
-              <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              <a href="https://eletricista-jr-solucoes.online " class="project-link"><i class="fas fa-external-link-alt"></i></a>
+              <a href="https://github.com/reinaldo-a/Eletrica" class="project-link"><i class="fab fa-github"></i></a>
             </div>
           </div>
           <div class="project-content">
-            <h3>AI Content Generator</h3>
+            <h3>Portifolio Elétrica</h3>
             <p>An AI-powered application that generates content based on user prompts using OpenAI's GPT models.</p>
             <div class="project-tags">
               <span class="project-tag">Next.js</span>
@@ -279,7 +258,7 @@
         
         <div class="project-card">
           <div class="project-image">
-            <img src="https://via.placeholder.com/500x300" alt="Real-time Chat Application">
+            <img src="https://via.placeholder.com/500x300/" alt="Real-time Chat Application">
             <div class="project-links">
               <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
               <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -310,7 +289,7 @@
   <section id="contact" class="contact">
     <div class="container">
       <h2 class="section-title">Vamos Conversar</h2>
-      <p class="section-subtitle">Interessado em trabalhar juntos? Entre em contato através dos canais abaixo.</p>
+      <p class="section-subtitle">Entre em contato através dos canais abaixo.</p>
       
       <div class="contact-info-card">
         <div class="contact-methods">
@@ -320,17 +299,17 @@
             </div>
             <div class="contact-details">
               <h3>Email</h3>
-              <a href="mailto:contato@exemplo.com">contato@exemplo.com</a>
+              <a href="mailto:rjunior260203@gmail.com">rjunior260203@gmail.com</a>
             </div>
           </div>
           
           <div class="contact-method">
             <div class="contact-icon">
-              <i class="fas fa-phone"></i>
+              <i class="fab fa-whatsapp"></i>
             </div>
             <div class="contact-details">
-              <h3>Telefone</h3>
-              <a href="tel:+5511999999999">+55 (11) 99999-9999</a>
+              <h3>Whatsapp</h3>
+              <a href="https://wa.me/557781432217">+55 (77) 81432217</a>
             </div>
           </div>
           
@@ -339,8 +318,8 @@
               <i class="fas fa-map-marker-alt"></i>
             </div>
             <div class="contact-details">
-              <h3>Localização</h3>
-              <p>São Paulo, Brasil</p>
+              <h3>Guanambi</h3>
+              <p>Bahia, Brasil</p>
             </div>
           </div>
         </div>
@@ -348,14 +327,11 @@
         <div class="social-links-container">
           <h3>Redes Sociais</h3>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="GitHub">
+            <a href="https://github.com/reinaldo-a" class="social-link" aria-label="GitHub">
               <i class="fab fa-github"></i>
             </a>
-            <a href="#" class="social-link" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/reinaldo-junior-a6229a307" class="social-link" aria-label="LinkedIn">
               <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="#" class="social-link" aria-label="Twitter">
-              <i class="fab fa-twitter"></i>
             </a>
             <a href="#" class="social-link" aria-label="Instagram">
               <i class="fab fa-instagram"></i>
@@ -372,7 +348,7 @@
       <div class="footer-content">
         <div class="footer-logo">
           <i class="fas fa-code"></i>
-          <span>DevPortfolio</span>
+          <span>DevRJ</span>
         </div>
         <p class="copyright">&copy; <span id="current-year"></span> Todos os direitos reservados.</p>
         <div class="footer-links">
@@ -382,6 +358,5 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
 </body>
 </html>
